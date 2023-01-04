@@ -70,7 +70,7 @@ function yorkClock(){
   var minutes = date.getMinutes();
   var seconds = date.getSeconds();
   hours=hours-6;
-  if (hours < 0) {
+  if (hours <= 0) {
     hours = 24 + hours;
   }
   if (hours > 24) {
@@ -107,7 +107,7 @@ function londonClock(){
   var minutes = date.getMinutes();
   var seconds = date.getSeconds();
   hours=hours-1;
-  if (hours < 0) {
+  if (hours <= 0) {
     hours = 24 + hours;
   }
   if (hours > 24) {
@@ -145,7 +145,7 @@ function tokioClock(){
   var seconds = date.getSeconds();
   hours=hours+8;
   
-  if (hours < 0) {
+  if (hours <= 0) {
     hours = 24 + hours;
   }
   if (hours > 24) {
